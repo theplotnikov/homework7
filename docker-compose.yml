@@ -11,12 +11,16 @@ services:
       - type: volume
         source: java
         target: /opt/
+        volume:
+          nocopy: true
   tomcat:
     image: tomcat:latest
     volumes:
       - type: volume
         source: java
         target: /usr/local/tomcat/webapps
+        volume:
+          nocopy: true
     ports:
       - "8080:80"
 volumes:
