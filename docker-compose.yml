@@ -7,3 +7,5 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+  tomcat:
+    image: tomcat:latest
