@@ -17,5 +17,7 @@ services:
       - type: volume
         source: java
         target: /usr/local/tomcat/webapps
+    ports:
+      - "8080:80"
 volumes:
   java:
