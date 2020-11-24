@@ -8,20 +8,12 @@ services:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - type: volume
-        source: java
-        target: /opt/
-        volume:
-          nocopy: true
+      - java:/tmp/
   tomcat:
     image: tomcat:latest
     volumes:
-      - type: volume
-        source: java
-        target: /usr/local/tomcat/webapps
-        volume:
-          nocopy: true
+      - java:/usr/local/tomcat/webapp/
     ports:
-      - "8080:80"
+      - "80:8080"
 volumes:
   java:
