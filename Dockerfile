@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-11
+FROM java:8-alpine
 RUN apt update && apt install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 RUN mvn -f boxfuse-sample-java-war-hello/pom.xml package
