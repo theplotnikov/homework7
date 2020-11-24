@@ -17,5 +17,5 @@ services:
       - type: volume
         source: java
         target: /usr/local/tomcat/webapps
-volemes:
+volumes:
   java:
