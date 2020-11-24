@@ -16,6 +16,6 @@ services:
     volumes:
       - type: volume
         source: java
-        target: /tmp/
+        target: /usr/local/tomcat/webapps
 volemes:
   java:
