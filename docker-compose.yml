@@ -10,7 +10,7 @@ services:
     volumes:
       - type: volume
         source: java
-        target: /tmp/
+        target: /opt/
   tomcat:
     image: tomcat:latest
     volumes:
