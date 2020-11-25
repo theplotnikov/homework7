@@ -4,9 +4,9 @@ services:
     image: maven:3.6.3-ibmjava-8-alpine
     links:
       - tomcat
-    build:
+#    build:
 #      context: ./
-      dockerfile: Dockerfile
+#      dockerfile: Dockerfile
     volumes:
       - java:/opt/
   tomcat:
