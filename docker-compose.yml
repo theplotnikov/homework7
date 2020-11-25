@@ -12,7 +12,7 @@ services:
   tomcat:
     image: khirin/tomcat
     volumes:
-      - java:/usr/local/tomcat/webapps.dist/
+      - java:/var/lib/tomcat/webapps/
     ports:
       - "8080:80"
 volumes:
