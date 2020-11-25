@@ -10,7 +10,7 @@ services:
     volumes:
       - java:/opt/
   tomcat:
-    image: bitnami/tomcat:latest
+    image: khirin/tomcat
     volumes:
       - java:/usr/local/tomcat/webapps.dist/
     ports:
