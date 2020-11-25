@@ -14,6 +14,6 @@ services:
     volumes:
       - java:/var/lib/tomcat/webapps/
     ports:
-      - "8080:80"
+      - "80:8080"
 volumes:
   java:
