@@ -1,12 +1,12 @@
 version: '3.8'
 services:
   maven:
-    image: tdeheurles/jvm-tools
+    image: alpine:3.10.1
     links:
       - tomcat
-#    build:
-#      context: ./
-#      dockerfile: Dockerfile
+    build:
+      context: ./
+      dockerfile: Dockerfile
     volumes:
       - java:/opt/
   tomcat:
