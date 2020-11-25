@@ -10,7 +10,7 @@ services:
     volumes:
       - java:/opt/
   tomcat:
-    image: jeanblanchard/java:8
+    image: jeanblanchard/tomcat9-java9
     volumes:
       - java:/usr/local/tomcat/webapps.dist/
     ports:
