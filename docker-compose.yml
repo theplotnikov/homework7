@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   maven:
-    image: ubuntu:18.04
+    image: maven:3.6.3-ibmjava-8-alpine
     links:
       - tomcat
     build:
