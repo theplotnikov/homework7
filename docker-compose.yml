@@ -5,7 +5,7 @@ services:
     links:
       - tomcat
     build:
-      context: ./
+#      context: ./
       dockerfile: Dockerfile
     volumes:
       - java:/opt/
