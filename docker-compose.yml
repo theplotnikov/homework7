@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   maven:
-    image: khirin/tomcat
+    image: maven:3.6.3-jdk-8-slim
     links:
       - tomcat
     build:
