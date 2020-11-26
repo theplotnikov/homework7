@@ -8,10 +8,10 @@ services:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - "/root/homework7/:/opt/"
+      - "./:/opt/"
   tomcat:
     image: khirin/tomcat
     volumes:
-      - "/root/homework7/:/var/lib/tomcat/webapps/"
+      - "./:/var/lib/tomcat/webapps/"
     ports:
       - "80:8080"
