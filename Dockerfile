@@ -2,5 +2,5 @@ FROM maven:3.6.3-jdk-8-slim
 RUN apt update && apt install git -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 RUN mvn -f boxfuse-sample-java-war-hello/pom.xml package
-RUN cp -r boxfuse-sample-java-war-hello/target/* /opt/
+RUN cp -rp boxfuse-sample-java-war-hello/target/hello-1.0.war /opt/
 CMD ["mvn"]
