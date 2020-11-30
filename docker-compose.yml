@@ -1,4 +1,3 @@
----
 version: "3.8"
 services:
   maven:
@@ -21,4 +20,4 @@ services:
     ports:
       - "80:8080"
 volumes:
-  war:
+        war:
