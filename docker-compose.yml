@@ -2,13 +2,11 @@ version: '3.8'
 services:
   maven:
     image: maven:3.6.3-jdk-8-slim
-    links:
-      - tomcat
     build:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - war:/tmp/
+      - war:/tmp
   tomcat:
     image: khirin/tomcat
     volumes:
